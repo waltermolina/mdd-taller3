@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Simulación educativa de análisis de Customer Experience e Inteligencia de Negocios para el caso GreenShop.">
+  <title>GreenShop · Laboratorio de análisis CX</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <!-- El tablero permanece visible mientras cambia la pantalla principal. -->
+  <aside class="sidebar" aria-labelledby="dashboard-title">
+    <a class="brand" href="#inicio" aria-label="GreenShop, volver al inicio">
+      <span class="brand-icon" aria-hidden="true">G</span>
+      <span>GreenShop<small>Laboratorio de Inteligencia de Negocios</small></span>
+    </a>
+    <h2 id="dashboard-title">Tablero de análisis</h2>
+    <p class="sidebar-caption">Tu diagnóstico, en construcción</p>
+    <dl class="metrics">
+      <div><dt>Problemas resueltos</dt><dd id="resolved-count">0/3</dd></div>
+      <div><dt>Fuentes identificadas</dt><dd id="sources-count">0</dd></div>
+      <div><dt>KPIs seleccionados</dt><dd id="kpis-count">0</dd></div>
+      <div><dt>Decisiones tomadas</dt><dd id="decisions-count">0</dd></div>
+    </dl>
+    <label class="progress-label" for="case-progress">Avance del diagnóstico <span id="progress-value">0%</span></label>
+    <progress id="case-progress" max="3" value="0">0 de 3 problemas</progress>
+    <p class="metric-note">Fuentes y KPIs únicos validados. Las decisiones se contabilizan al elegir la alternativa correcta.</p>
+    <div class="sidebar-footer"><span class="status-dot" aria-hidden="true"></span> Simulación académica · MDD</div>
+  </aside>
+
+  <div class="workspace">
+    <header class="topbar">
+      <span>Customer Experience <span aria-hidden="true">/</span> <strong>Análisis de negocio</strong></span>
+      <span class="tag">Caso de estudio</span>
+    </header>
+    <main id="main" tabindex="-1">
+      <noscript><div class="card">Para realizar la simulación, activá JavaScript en tu navegador.</div></noscript>
+      <!-- JavaScript presenta una única pantalla activa y gestiona su foco. -->
+      <div id="screen"></div>
+    </main>
+    <footer class="page-footer">GreenShop · Material Didáctico Digital <span>Inteligencia de Negocios</span></footer>
+  </div>
+</body>
+</html>
